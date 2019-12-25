@@ -10,7 +10,7 @@
 #import "PDLeakMonitor.h"
 #import "PDLeakConfiguration.h"
 
-static void dispatch_async_safe_main_queue(dispatch_block_t blk) {
+static inline void dispatch_async_safe_main_queue(dispatch_block_t blk) {
     if (0 == strcmp(dispatch_queue_get_label(dispatch_get_main_queue()),
                     dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL))) {
         blk();
