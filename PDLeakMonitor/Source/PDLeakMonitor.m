@@ -33,7 +33,11 @@ NSString *const PDLeakMonitorPongNotification = @"PDLeakMonitorPongNotification"
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _specifiedClassList = @[];
+        _specifiedClassList = @[
+            @"UIView",
+            @"UIViewController",
+            @"UINavigationController"
+        ];
         
         [self listen];
     }

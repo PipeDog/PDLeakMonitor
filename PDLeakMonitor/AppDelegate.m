@@ -23,16 +23,8 @@
     // Launch leak monitor.
     PDLeakMonitor *monitor = [PDLeakMonitor globalMonitor];
     monitor.delegate = self;
-
-    [monitor addSpecifiedClassList:^NSArray<NSString *> * _Nonnull{
-        return @[
-            @"UIView",
-            @"UIViewController",
-            @"UINavigationController"
-        ];
-    }];
-    
     [monitor install];
+    
     return YES;
 }
 

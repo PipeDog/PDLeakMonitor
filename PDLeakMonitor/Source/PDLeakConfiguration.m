@@ -88,11 +88,11 @@
     NSNumber *condition = _systemClasses[classname];
     
     if (!condition) {
-        NSBundle *bundle = [NSBundle bundleForClass:cls];
         /**
             @eg:
             /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/UIKitCore.framework
          */
+        NSBundle *bundle = [NSBundle bundleForClass:cls];
         BOOL isSystemClass = ([bundle.bundlePath containsString:@"PrivateFrameworks"]) ;
         
         Lock();
