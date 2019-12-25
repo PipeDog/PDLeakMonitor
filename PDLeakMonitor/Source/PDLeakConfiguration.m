@@ -93,7 +93,7 @@
             /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/UIKitCore.framework
          */
         NSBundle *bundle = [NSBundle bundleForClass:cls];
-        BOOL isSystemClass = ([bundle.bundlePath containsString:@"PrivateFrameworks"]) ;
+        BOOL isSystemClass = [bundle.bundlePath containsString:@"PrivateFrameworks"];
         
         Lock();
         _systemClasses[classname] = @(isSystemClass);
