@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDC2F86723ACCB0F00D16B88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC2F86623ACCB0F00D16B88 /* AppDelegate.m */; };
+		DDC2F86A23ACCB0F00D16B88 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC2F86923ACCB0F00D16B88 /* SceneDelegate.m */; };
+		DDC2F86D23ACCB0F00D16B88 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC2F86C23ACCB0F00D16B88 /* ViewController.m */; };
+		DDC2F87023ACCB0F00D16B88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC2F86E23ACCB0F00D16B88 /* Main.storyboard */; };
+		DDC2F87223ACCB1000D16B88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC2F87123ACCB1000D16B88 /* Assets.xcassets */; };
+		DDC2F87523ACCB1000D16B88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC2F87323ACCB1000D16B88 /* LaunchScreen.storyboard */; };
+		DDC2F87823ACCB1000D16B88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC2F87723ACCB1000D16B88 /* main.m */; };
+		DDC2F88223ACCB1100D16B88 /* PDLeakMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC2F88123ACCB1100D16B88 /* PDLeakMonitorTests.m */; };
+		DDC2F88D23ACCB1100D16B88 /* PDLeakMonitorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC2F88C23ACCB1100D16B88 /* PDLeakMonitorUITests.m */; };
+		DDC2F8AC23B05D8D00D16B88 /* PDLeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC2F8AB23B05D8D00D16B88 /* PDLeakProxy.m */; };
+		DDC2F8AF23B05DE500D16B88 /* NSObject+PDLeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC2F8AE23B05DE500D16B88 /* NSObject+PDLeakProxy.m */; };
+		DDC2F8B223B05DF200D16B88 /* UIView+PDLeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC2F8B123B05DF200D16B88 /* UIView+PDLeakProxy.m */; };
+		DDC2F8B523B05DFB00D16B88 /* UIViewController+PDLeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC2F8B423B05DFB00D16B88 /* UIViewController+PDLeakProxy.m */; };
+		DDC2F8B823B05E1000D16B88 /* UINavigationController+PDLeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC2F8B723B05E1000D16B88 /* UINavigationController+PDLeakProxy.m */; };
+		DDC2F8BB23B05E5B00D16B88 /* NSObject+PDLeakCollect.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC2F8BA23B05E5B00D16B88 /* NSObject+PDLeakCollect.m */; };
+		DDC2F8BE23B05E7500D16B88 /* PDLeakMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC2F8BD23B05E7500D16B88 /* PDLeakMonitor.m */; };
+		DDC2F8C123B0604C00D16B88 /* PDLeakConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC2F8C023B0604C00D16B88 /* PDLeakConfiguration.m */; };
+		DDC2F8C423B0E68C00D16B88 /* PDHooker.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC2F8C323B0E68C00D16B88 /* PDHooker.m */; };
+		DDC2F8C723B20F5200D16B88 /* PDClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC2F8C623B20F5200D16B88 /* PDClassInfo.m */; };
+		DDC2F8D123B2FDFE00D16B88 /* PDLeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC2F8D023B2FDFE00D16B88 /* PDLeakViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDC2F87E23ACCB1100D16B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDC2F85A23ACCB0F00D16B88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDC2F86123ACCB0F00D16B88;
+			remoteInfo = PDLeakMonitor;
+		};
+		DDC2F88923ACCB1100D16B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDC2F85A23ACCB0F00D16B88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDC2F86123ACCB0F00D16B88;
+			remoteInfo = PDLeakMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDC2F86223ACCB0F00D16B88 /* PDLeakMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDLeakMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC2F86523ACCB0F00D16B88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DDC2F86623ACCB0F00D16B88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DDC2F86823ACCB0F00D16B88 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		DDC2F86923ACCB0F00D16B88 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		DDC2F86B23ACCB0F00D16B88 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DDC2F86C23ACCB0F00D16B88 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DDC2F86F23ACCB0F00D16B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDC2F87123ACCB1000D16B88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDC2F87423ACCB1000D16B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDC2F87623ACCB1000D16B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDC2F87723ACCB1000D16B88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDC2F87D23ACCB1100D16B88 /* PDLeakMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDLeakMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC2F88123ACCB1100D16B88 /* PDLeakMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDLeakMonitorTests.m; sourceTree = "<group>"; };
+		DDC2F88323ACCB1100D16B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDC2F88823ACCB1100D16B88 /* PDLeakMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDLeakMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC2F88C23ACCB1100D16B88 /* PDLeakMonitorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDLeakMonitorUITests.m; sourceTree = "<group>"; };
+		DDC2F88E23ACCB1100D16B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDC2F8AA23B05D8D00D16B88 /* PDLeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDLeakProxy.h; sourceTree = "<group>"; };
+		DDC2F8AB23B05D8D00D16B88 /* PDLeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDLeakProxy.m; sourceTree = "<group>"; };
+		DDC2F8AD23B05DE500D16B88 /* NSObject+PDLeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+PDLeakProxy.h"; sourceTree = "<group>"; };
+		DDC2F8AE23B05DE500D16B88 /* NSObject+PDLeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PDLeakProxy.m"; sourceTree = "<group>"; };
+		DDC2F8B023B05DF200D16B88 /* UIView+PDLeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+PDLeakProxy.h"; sourceTree = "<group>"; };
+		DDC2F8B123B05DF200D16B88 /* UIView+PDLeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+PDLeakProxy.m"; sourceTree = "<group>"; };
+		DDC2F8B323B05DFB00D16B88 /* UIViewController+PDLeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PDLeakProxy.h"; sourceTree = "<group>"; };
+		DDC2F8B423B05DFB00D16B88 /* UIViewController+PDLeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PDLeakProxy.m"; sourceTree = "<group>"; };
+		DDC2F8B623B05E1000D16B88 /* UINavigationController+PDLeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+PDLeakProxy.h"; sourceTree = "<group>"; };
+		DDC2F8B723B05E1000D16B88 /* UINavigationController+PDLeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+PDLeakProxy.m"; sourceTree = "<group>"; };
+		DDC2F8B923B05E5B00D16B88 /* NSObject+PDLeakCollect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+PDLeakCollect.h"; sourceTree = "<group>"; };
+		DDC2F8BA23B05E5B00D16B88 /* NSObject+PDLeakCollect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PDLeakCollect.m"; sourceTree = "<group>"; };
+		DDC2F8BC23B05E7500D16B88 /* PDLeakMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDLeakMonitor.h; sourceTree = "<group>"; };
+		DDC2F8BD23B05E7500D16B88 /* PDLeakMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDLeakMonitor.m; sourceTree = "<group>"; };
+		DDC2F8BF23B0604C00D16B88 /* PDLeakConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDLeakConfiguration.h; sourceTree = "<group>"; };
+		DDC2F8C023B0604C00D16B88 /* PDLeakConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDLeakConfiguration.m; sourceTree = "<group>"; };
+		DDC2F8C223B0E68C00D16B88 /* PDHooker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDHooker.h; sourceTree = "<group>"; };
+		DDC2F8C323B0E68C00D16B88 /* PDHooker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDHooker.m; sourceTree = "<group>"; };
+		DDC2F8C523B20F5200D16B88 /* PDClassInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDClassInfo.h; sourceTree = "<group>"; };
+		DDC2F8C623B20F5200D16B88 /* PDClassInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDClassInfo.m; sourceTree = "<group>"; };
+		DDC2F8CF23B2FDFD00D16B88 /* PDLeakViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDLeakViewController.h; sourceTree = "<group>"; };
+		DDC2F8D023B2FDFE00D16B88 /* PDLeakViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDLeakViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDC2F85F23ACCB0F00D16B88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC2F87A23ACCB1100D16B88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC2F88523ACCB1100D16B88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDC2F85923ACCB0F00D16B88 = {
+			isa = PBXGroup;
+			children = (
+				DDC2F86423ACCB0F00D16B88 /* PDLeakMonitor */,
+				DDC2F88023ACCB1100D16B88 /* PDLeakMonitorTests */,
+				DDC2F88B23ACCB1100D16B88 /* PDLeakMonitorUITests */,
+				DDC2F86323ACCB0F00D16B88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDC2F86323ACCB0F00D16B88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDC2F86223ACCB0F00D16B88 /* PDLeakMonitor.app */,
+				DDC2F87D23ACCB1100D16B88 /* PDLeakMonitorTests.xctest */,
+				DDC2F88823ACCB1100D16B88 /* PDLeakMonitorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDC2F86423ACCB0F00D16B88 /* PDLeakMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				DDC2F89A23ACCB1600D16B88 /* Source */,
+				DDC2F86523ACCB0F00D16B88 /* AppDelegate.h */,
+				DDC2F86623ACCB0F00D16B88 /* AppDelegate.m */,
+				DDC2F86823ACCB0F00D16B88 /* SceneDelegate.h */,
+				DDC2F86923ACCB0F00D16B88 /* SceneDelegate.m */,
+				DDC2F8CF23B2FDFD00D16B88 /* PDLeakViewController.h */,
+				DDC2F8D023B2FDFE00D16B88 /* PDLeakViewController.m */,
+				DDC2F86B23ACCB0F00D16B88 /* ViewController.h */,
+				DDC2F86C23ACCB0F00D16B88 /* ViewController.m */,
+				DDC2F86E23ACCB0F00D16B88 /* Main.storyboard */,
+				DDC2F87123ACCB1000D16B88 /* Assets.xcassets */,
+				DDC2F87323ACCB1000D16B88 /* LaunchScreen.storyboard */,
+				DDC2F87623ACCB1000D16B88 /* Info.plist */,
+				DDC2F87723ACCB1000D16B88 /* main.m */,
+			);
+			path = PDLeakMonitor;
+			sourceTree = "<group>";
+		};
+		DDC2F88023ACCB1100D16B88 /* PDLeakMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDC2F88123ACCB1100D16B88 /* PDLeakMonitorTests.m */,
+				DDC2F88323ACCB1100D16B88 /* Info.plist */,
+			);
+			path = PDLeakMonitorTests;
+			sourceTree = "<group>";
+		};
+		DDC2F88B23ACCB1100D16B88 /* PDLeakMonitorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDC2F88C23ACCB1100D16B88 /* PDLeakMonitorUITests.m */,
+				DDC2F88E23ACCB1100D16B88 /* Info.plist */,
+			);
+			path = PDLeakMonitorUITests;
+			sourceTree = "<group>";
+		};
+		DDC2F89A23ACCB1600D16B88 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DDC2F8BF23B0604C00D16B88 /* PDLeakConfiguration.h */,
+				DDC2F8C023B0604C00D16B88 /* PDLeakConfiguration.m */,
+				DDC2F8BC23B05E7500D16B88 /* PDLeakMonitor.h */,
+				DDC2F8BD23B05E7500D16B88 /* PDLeakMonitor.m */,
+				DDC2F8AA23B05D8D00D16B88 /* PDLeakProxy.h */,
+				DDC2F8AB23B05D8D00D16B88 /* PDLeakProxy.m */,
+				DDC2F8B923B05E5B00D16B88 /* NSObject+PDLeakCollect.h */,
+				DDC2F8BA23B05E5B00D16B88 /* NSObject+PDLeakCollect.m */,
+				DDC2F8AD23B05DE500D16B88 /* NSObject+PDLeakProxy.h */,
+				DDC2F8AE23B05DE500D16B88 /* NSObject+PDLeakProxy.m */,
+				DDC2F8B023B05DF200D16B88 /* UIView+PDLeakProxy.h */,
+				DDC2F8B123B05DF200D16B88 /* UIView+PDLeakProxy.m */,
+				DDC2F8B323B05DFB00D16B88 /* UIViewController+PDLeakProxy.h */,
+				DDC2F8B423B05DFB00D16B88 /* UIViewController+PDLeakProxy.m */,
+				DDC2F8B623B05E1000D16B88 /* UINavigationController+PDLeakProxy.h */,
+				DDC2F8B723B05E1000D16B88 /* UINavigationController+PDLeakProxy.m */,
+				DDC2F8C223B0E68C00D16B88 /* PDHooker.h */,
+				DDC2F8C323B0E68C00D16B88 /* PDHooker.m */,
+				DDC2F8C523B20F5200D16B88 /* PDClassInfo.h */,
+				DDC2F8C623B20F5200D16B88 /* PDClassInfo.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDC2F86123ACCB0F00D16B88 /* PDLeakMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDC2F89123ACCB1100D16B88 /* Build configuration list for PBXNativeTarget "PDLeakMonitor" */;
+			buildPhases = (
+				DDC2F85E23ACCB0F00D16B88 /* Sources */,
+				DDC2F85F23ACCB0F00D16B88 /* Frameworks */,
+				DDC2F86023ACCB0F00D16B88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDLeakMonitor;
+			productName = PDLeakMonitor;
+			productReference = DDC2F86223ACCB0F00D16B88 /* PDLeakMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDC2F87C23ACCB1100D16B88 /* PDLeakMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDC2F89423ACCB1100D16B88 /* Build configuration list for PBXNativeTarget "PDLeakMonitorTests" */;
+			buildPhases = (
+				DDC2F87923ACCB1100D16B88 /* Sources */,
+				DDC2F87A23ACCB1100D16B88 /* Frameworks */,
+				DDC2F87B23ACCB1100D16B88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDC2F87F23ACCB1100D16B88 /* PBXTargetDependency */,
+			);
+			name = PDLeakMonitorTests;
+			productName = PDLeakMonitorTests;
+			productReference = DDC2F87D23ACCB1100D16B88 /* PDLeakMonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDC2F88723ACCB1100D16B88 /* PDLeakMonitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDC2F89723ACCB1100D16B88 /* Build configuration list for PBXNativeTarget "PDLeakMonitorUITests" */;
+			buildPhases = (
+				DDC2F88423ACCB1100D16B88 /* Sources */,
+				DDC2F88523ACCB1100D16B88 /* Frameworks */,
+				DDC2F88623ACCB1100D16B88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDC2F88A23ACCB1100D16B88 /* PBXTargetDependency */,
+			);
+			name = PDLeakMonitorUITests;
+			productName = PDLeakMonitorUITests;
+			productReference = DDC2F88823ACCB1100D16B88 /* PDLeakMonitorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDC2F85A23ACCB0F00D16B88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = liang;
+				TargetAttributes = {
+					DDC2F86123ACCB0F00D16B88 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					DDC2F87C23ACCB1100D16B88 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = DDC2F86123ACCB0F00D16B88;
+					};
+					DDC2F88723ACCB1100D16B88 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = DDC2F86123ACCB0F00D16B88;
+					};
+				};
+			};
+			buildConfigurationList = DDC2F85D23ACCB0F00D16B88 /* Build configuration list for PBXProject "PDLeakMonitor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDC2F85923ACCB0F00D16B88;
+			productRefGroup = DDC2F86323ACCB0F00D16B88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDC2F86123ACCB0F00D16B88 /* PDLeakMonitor */,
+				DDC2F87C23ACCB1100D16B88 /* PDLeakMonitorTests */,
+				DDC2F88723ACCB1100D16B88 /* PDLeakMonitorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDC2F86023ACCB0F00D16B88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC2F87523ACCB1000D16B88 /* LaunchScreen.storyboard in Resources */,
+				DDC2F87223ACCB1000D16B88 /* Assets.xcassets in Resources */,
+				DDC2F87023ACCB0F00D16B88 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC2F87B23ACCB1100D16B88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC2F88623ACCB1100D16B88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDC2F85E23ACCB0F00D16B88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC2F8C423B0E68C00D16B88 /* PDHooker.m in Sources */,
+				DDC2F86D23ACCB0F00D16B88 /* ViewController.m in Sources */,
+				DDC2F8C123B0604C00D16B88 /* PDLeakConfiguration.m in Sources */,
+				DDC2F8B223B05DF200D16B88 /* UIView+PDLeakProxy.m in Sources */,
+				DDC2F8C723B20F5200D16B88 /* PDClassInfo.m in Sources */,
+				DDC2F8AC23B05D8D00D16B88 /* PDLeakProxy.m in Sources */,
+				DDC2F8BE23B05E7500D16B88 /* PDLeakMonitor.m in Sources */,
+				DDC2F86723ACCB0F00D16B88 /* AppDelegate.m in Sources */,
+				DDC2F8B823B05E1000D16B88 /* UINavigationController+PDLeakProxy.m in Sources */,
+				DDC2F8B523B05DFB00D16B88 /* UIViewController+PDLeakProxy.m in Sources */,
+				DDC2F87823ACCB1000D16B88 /* main.m in Sources */,
+				DDC2F86A23ACCB0F00D16B88 /* SceneDelegate.m in Sources */,
+				DDC2F8D123B2FDFE00D16B88 /* PDLeakViewController.m in Sources */,
+				DDC2F8AF23B05DE500D16B88 /* NSObject+PDLeakProxy.m in Sources */,
+				DDC2F8BB23B05E5B00D16B88 /* NSObject+PDLeakCollect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC2F87923ACCB1100D16B88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC2F88223ACCB1100D16B88 /* PDLeakMonitorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC2F88423ACCB1100D16B88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC2F88D23ACCB1100D16B88 /* PDLeakMonitorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDC2F87F23ACCB1100D16B88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDC2F86123ACCB0F00D16B88 /* PDLeakMonitor */;
+			targetProxy = DDC2F87E23ACCB1100D16B88 /* PBXContainerItemProxy */;
+		};
+		DDC2F88A23ACCB1100D16B88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDC2F86123ACCB0F00D16B88 /* PDLeakMonitor */;
+			targetProxy = DDC2F88923ACCB1100D16B88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDC2F86E23ACCB0F00D16B88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDC2F86F23ACCB0F00D16B88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDC2F87323ACCB1000D16B88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDC2F87423ACCB1000D16B88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDC2F88F23ACCB1100D16B88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DDC2F89023ACCB1100D16B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDC2F89223ACCB1100D16B88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5ZNVTYNY8;
+				INFOPLIST_FILE = PDLeakMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PipeDog.PDLeakMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDC2F89323ACCB1100D16B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5ZNVTYNY8;
+				INFOPLIST_FILE = PDLeakMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PipeDog.PDLeakMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DDC2F89523ACCB1100D16B88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5ZNVTYNY8;
+				INFOPLIST_FILE = PDLeakMonitorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PipeDog.PDLeakMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDLeakMonitor.app/PDLeakMonitor";
+			};
+			name = Debug;
+		};
+		DDC2F89623ACCB1100D16B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5ZNVTYNY8;
+				INFOPLIST_FILE = PDLeakMonitorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PipeDog.PDLeakMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDLeakMonitor.app/PDLeakMonitor";
+			};
+			name = Release;
+		};
+		DDC2F89823ACCB1100D16B88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5ZNVTYNY8;
+				INFOPLIST_FILE = PDLeakMonitorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PipeDog.PDLeakMonitorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PDLeakMonitor;
+			};
+			name = Debug;
+		};
+		DDC2F89923ACCB1100D16B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5ZNVTYNY8;
+				INFOPLIST_FILE = PDLeakMonitorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PipeDog.PDLeakMonitorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PDLeakMonitor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDC2F85D23ACCB0F00D16B88 /* Build configuration list for PBXProject "PDLeakMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC2F88F23ACCB1100D16B88 /* Debug */,
+				DDC2F89023ACCB1100D16B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDC2F89123ACCB1100D16B88 /* Build configuration list for PBXNativeTarget "PDLeakMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC2F89223ACCB1100D16B88 /* Debug */,
+				DDC2F89323ACCB1100D16B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDC2F89423ACCB1100D16B88 /* Build configuration list for PBXNativeTarget "PDLeakMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC2F89523ACCB1100D16B88 /* Debug */,
+				DDC2F89623ACCB1100D16B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDC2F89723ACCB1100D16B88 /* Build configuration list for PBXNativeTarget "PDLeakMonitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC2F89823ACCB1100D16B88 /* Debug */,
+				DDC2F89923ACCB1100D16B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDC2F85A23ACCB0F00D16B88 /* Project object */;
+}
