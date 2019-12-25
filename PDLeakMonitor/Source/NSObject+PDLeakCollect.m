@@ -36,6 +36,13 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             // Bind `owner` for `pd_leakProxy` and collect next level ivars.
             for (PDClassIvarInfo *ivarInfo in ivarInfos) {
+                BOOL ivarIsObject = ((ivarInfo.type & PDEncodingTypeMask) == PDEncodingTypeObject);
+                if (!ivarIsObject) { continue; }
+                
+                BOOL ivarIsRetained = ((ivarInfo.type & PDEncodingTypePropertyMask) == PDEncodingTypePropertyRetain ||
+                                       (ivarInfo.type & PDEncodingTypePropertyMask) == PDEncodingTypePropertyCopy);
+                if (!ivarIsRetained) { continue; }
+
                 id value = object_getIvar(self, ivarInfo.ivar);
                 if (!value) { continue; }
                 
