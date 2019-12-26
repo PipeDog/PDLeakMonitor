@@ -33,11 +33,11 @@
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"[Warning]" message:message preferredStyle:UIAlertControllerStyleAlert];
     [alertController addAction:[UIAlertAction actionWithTitle:@"Get" style:UIAlertActionStyleDestructive handler:nil]];
     
-    UIViewController *controller = [self validWindow].rootViewController;
+    UIViewController *controller = [self effectiveWindow].rootViewController;
     [controller presentViewController:alertController animated:YES completion:nil];
 }
 
-- (UIWindow *)validWindow {
+- (UIWindow *)effectiveWindow {
     UIWindow *window = nil;
     
     if (@available(iOS 13.0, *)) {
