@@ -18,7 +18,8 @@
     BOOL (^_ignoreClassCondition)(Class cls);
 
     dispatch_semaphore_t _lock;
-    NSMutableDictionary<NSString *, NSNumber *> *_systemClasses;
+    // The `_cacheClasses` is used to cache whether a class belongs to the system class.
+    NSMutableDictionary<NSString *, NSNumber *> *_cacheClasses;
 }
 
 + (PDLeakConfiguration *)globalConfiguration {
@@ -43,7 +44,7 @@
     _effectiveAfterTimes = 2;
     
     _lock = dispatch_semaphore_create(1);
-    _systemClasses = [NSMutableDictionary dictionary];
+    _cacheClasses = [NSMutableDictionary dictionary];
 }
 
 #pragma mark - Public Methods
@@ -85,9 +86,9 @@
     if (!cls) { return NO; }
         
     NSString *classname = NSStringFromClass(cls);    
-    NSNumber *condition = _systemClasses[classname];
+    NSNumber *condition = _cacheClasses[classname];
     
-    if (!condition) {
+    if (condition == nil) {
         /**
             @eg:
             /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/UIKitCore.framework
@@ -96,7 +97,7 @@
         BOOL isSystemClass = [bundle.bundlePath containsString:@"PrivateFrameworks"];
         
         Lock();
-        _systemClasses[classname] = @(isSystemClass);
+        _cacheClasses[classname] = @(isSystemClass);
         Unlock();
         return isSystemClass;
     }
