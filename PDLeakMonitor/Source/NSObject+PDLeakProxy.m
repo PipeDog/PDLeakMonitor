@@ -25,7 +25,7 @@
     return YES;
 }
 
-- (BOOL)markingAlive {
+- (BOOL)taggedAlive {
     if (self.pd_leakProxy) {
         return NO;
     }

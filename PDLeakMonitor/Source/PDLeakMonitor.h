@@ -19,7 +19,7 @@ FOUNDATION_EXPORT NSString *const PDLeakMonitorPongNotification;
 
 + (void)prepareForLeakMonitor;
 
-- (BOOL)markingAlive;
+- (BOOL)taggedAlive;
 - (BOOL)isAlive;
 
 @end

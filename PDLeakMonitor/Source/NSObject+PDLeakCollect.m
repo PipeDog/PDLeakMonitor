@@ -52,7 +52,7 @@
                 id value = object_getIvar(self, ivarInfo.ivar);
                 if (!value) { continue; }
                 
-                if ([value markingAlive]) {
+                if ([value taggedAlive]) {
                     [value pd_leakProxy].owner = self;
                     [value pd_collectAllRetainedIvarsWithLevel:level + 1];
                 }
@@ -69,7 +69,7 @@
                 id value = ((id (*)(id, SEL))(void *) objc_msgSend)((id)self, propertyInfo.getter);
                 if (!value) { continue; }
                 
-                if ([value markingAlive]) {
+                if ([value taggedAlive]) {
                     [value pd_leakProxy].owner = self;
                     [value pd_collectAllRetainedIvarsWithLevel:level + 1];
                 }

@@ -14,7 +14,7 @@
 
 - (void)_pd_pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     [self _pd_pushViewController:viewController animated:animated];
-    [viewController markingAlive];
+    [viewController taggedAlive];
 }
 
 #pragma mark - PDLeakMonitorMember Methods

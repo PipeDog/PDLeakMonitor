@@ -15,12 +15,12 @@
 
 - (void)_pd_didMoveToWindow {
     [self _pd_didMoveToWindow];
-    [self markingAliveSelf];
+    [self taggedAliveSelf];
 }
 
 - (void)_pd_didMoveToSuperview {
     [self _pd_didMoveToSuperview];
-    [self markingAliveSelf];
+    [self taggedAliveSelf];
 }
 
 #pragma mark - PDLeakMonitorMember Methods
@@ -69,7 +69,7 @@
     return resp;
 }
 
-- (void)markingAliveSelf {
+- (void)taggedAliveSelf {
     BOOL hasAliveParent = NO;
     UIResponder *resp = self.nextResponder;
     
@@ -82,7 +82,7 @@
     }
     
     if (hasAliveParent) {
-        [self markingAlive];
+        [self taggedAlive];
     }
 }
 

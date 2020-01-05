@@ -16,7 +16,7 @@
 
 - (void)_pd_presentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion {
     [self _pd_presentViewController:viewControllerToPresent animated:flag completion:completion];
-    [viewControllerToPresent markingAlive];
+    [viewControllerToPresent taggedAlive];
 }
 
 - (void)_pd_viewDidAppear:(BOOL)animated {
